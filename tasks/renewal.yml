@@ -1,0 +1,7 @@
+---
+- name: test auto renewal
+  command: ./certbot-auto renew --dry-run chdir="{{ certbot_dir }}"
+
+
+- name: renew certificate
+  command: ./certbot-auto renew --quiet --no-self-upgrade chdir="{{ certbot_dir }}"

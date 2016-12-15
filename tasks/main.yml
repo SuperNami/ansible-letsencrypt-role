@@ -1,0 +1,6 @@
+---
+- include: clone.yml
+  tags: certbot_clone
+
+- include: renewal.yml
+  tags: certbot_renewal
